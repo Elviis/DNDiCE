@@ -10,9 +10,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
-    android:background="#FFF9C4"
     android:focusable="true"
-    android:clickable="false">
+    android:clickable="false"
+    android:background="#00B8D4">
 
     <TextView
         android:layout_width="fill_parent"
@@ -25,7 +25,7 @@
         android:textAlignment="center"
         android:textSize="600px"
         android:textIsSelectable="false"
-        android:textColor="#fbc02d"
+        android:textColor="#fff9c4"
         android:text="00"
         android:textStyle="bold"
         android:onClick="cHistory" />
@@ -37,11 +37,11 @@
         android:id="@+id/btnD4"
         android:onClick="rollD4Button"
         android:textSize="105px"
-        android:background="#fbc02d"
         android:textColor="#fff9c4"
         android:layout_below="@+id/lblDiceRoll"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="133dp" />
+        android:layout_marginTop="133dp"
+        android:background="#0097A7" />
 
     <Button
         android:layout_width="wrap_content"
@@ -50,7 +50,7 @@
         android:id="@+id/btnD6"
         android:onClick="rollD6Button"
         android:textSize="105px"
-        android:background="#fbc02d"
+        android:background="#0097A7"
         android:textColor="#fff9c4"
         android:layout_alignTop="@+id/btnD4"
         android:layout_centerHorizontal="true" />
@@ -62,7 +62,7 @@
         android:id="@+id/btnD8"
         android:onClick="rollD8Button"
         android:textSize="105px"
-        android:background="#fbc02d"
+        android:background="#0097A7"
         android:textColor="#fff9c4"
         android:layout_alignTop="@+id/btnD6"
         android:layout_alignParentEnd="true" />
@@ -74,7 +74,7 @@
         android:id="@+id/btnD10"
         android:onClick="rollD10Button"
         android:textSize="105px"
-        android:background="#fbc02d"
+        android:background="#0097A7"
         android:textColor="#fff9c4"
         android:layout_below="@+id/btnD4"
         android:layout_alignParentStart="true"
@@ -87,7 +87,7 @@
         android:id="@+id/btnD12"
         android:onClick="rollD12Button"
         android:textSize="105px"
-        android:background="#fbc02d"
+        android:background="#0097A7"
         android:textColor="#fff9c4"
         android:layout_alignTop="@+id/btnD10"
         android:layout_centerHorizontal="true"
@@ -100,7 +100,7 @@
         android:id="@+id/btnD20"
         android:onClick="rollD20Button"
         android:textSize="105px"
-        android:background="#fbc02d"
+        android:background="#0097A7"
         android:textColor="#fff9c4"
         android:layout_alignTop="@+id/btnD12"
         android:layout_alignStart="@+id/btnD8" />
@@ -110,16 +110,17 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/lblRollHistory"
-        android:hint="Roll History"
+        android:hint="History"
         android:maxLines="3"
         android:singleLine="false"
         android:nestedScrollingEnabled="false"
         android:clickable="true"
         android:onClick="cHistory"
         android:textAlignment="center"
-        android:textColor="#fbc02d"
+        android:textColor="#fff9c4"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -129,9 +130,10 @@
         android:id="@+id/txtTotal"
         android:singleLine="true"
         android:inputType="number"
-        android:textColor="#fbc02d"
+        android:textColor="#fff9c4"
         android:onClick="cHistory"
         android:layout_below="@+id/btnD12"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp" />
+        android:layout_marginTop="22dp"
+        android:textStyle="bold" />
 </RelativeLayout>
